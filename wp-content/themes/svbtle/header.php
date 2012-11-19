@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
 		<title><?php wp_title( 'by', true, 'right' ); bloginfo( 'name' ); ?></title>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<!--[if lt IE 9]>
@@ -32,7 +33,9 @@
 
 		<style>blockquote {border-color: <?php echo $color ?>;}ul#user_meta a:hover span.link_logo_inside,ul#user_meta a:hover span.link_logo,aside.kudo.complete span.circle {background-color: <?php echo $color ?>;}section.preview header#begin h2,ul#user_meta a:hover,nav.pagination span.next a,nav.pagination span.prev a {color: <?php echo $color ?>;}ul#user_meta a:hover,nav.pagination span.next a,nav.pagination span.prev a {border-color: <?php echo $color ?>;}::-moz-selection { background: <?php echo $color ?>; color: #fff; text-shadow: none;}::selection { background: <?php echo $color ?>; color: #fff; text-shadow: none;}
 		</style>
-		
+		<?php if (!empty($options['rel_author'])): ?>
+			<link rel="author" href="https://plus.google.com/<?php echo $options['rel_author'] ?>" />
+		<?php endif ?>
 		<?php wp_head();  ?>
 
 		
@@ -78,7 +81,7 @@
 				
 				<?php if (!empty($options['github_username'])): ?>
 					<li class="link github">
-						<a target="_blank" href="http://github.com/<?php echo $options['github_username'] ?>">Github</a>
+						<a target="_blank" href="http://github.com/<?php echo $options['github_username'] ?>"><img src="/wp-content/themes/svtle/images/icons/plastique-social_88.png" /></a>
 					</li>
 				<?php endif ?>
 				

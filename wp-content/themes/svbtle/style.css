@@ -539,7 +539,8 @@ header#sidebar h1#blog_name {
     margin-bottom: 10px;
 }
 header#sidebar h1#blog_name a {
-    font-family: "freight-sans-pro",sans-serif;
+    /*font-family: "freight-sans-pro",sans-serif;*/
+    font-family: Sanchez, helvetica, sans-serif;
     font-weight: 900;
     font-size: 30px;
     line-height: 30px;
