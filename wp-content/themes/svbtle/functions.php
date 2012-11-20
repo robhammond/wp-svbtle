@@ -247,8 +247,8 @@ function widgets_init() {
 		'id' => 'sidebar',
 		'before_widget' => '',
 		'after_widget' => '',
-		'before_title' => '<span class="hidden">',
-		'after_title' => '</span>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
 	));
 }
 

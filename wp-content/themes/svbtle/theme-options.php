@@ -42,6 +42,10 @@ function theme_options_do_page() {
 
 			<table class="form-table">
 					<tr>
+						<th><?php _e( 'Real Name', 'wordpress-svbtle' ); ?></th>
+						<td><input class="regular-text" type="text" name="svbtle_options[real_name]" value="<?php esc_attr_e( $options['real_name'] ); ?>" /></td>
+					</tr>
+					<tr>
 						<th><?php _e( 'Twitter Username', 'wordpress-svbtle' ); ?></th>
 						<td><input class="regular-text" type="text" name="svbtle_options[twitter_username]" value="<?php esc_attr_e( $options['twitter_username'] ); ?>" /></td>
 					</tr>
@@ -69,11 +73,22 @@ function theme_options_do_page() {
 							<input class="regular-text" type="text" name="svbtle_options[soundcloud]" value="<?php esc_attr_e( $options['soundcloud'] ); ?>" />
 						</td>
 					</tr>
-
+					<tr>
+						<th><?php _e( 'Last.fm Username', 'wordpress-svbtle' ); ?></th>
+						<td>
+							<input class="regular-text" type="text" name="svbtle_options[lastfm]" value="<?php esc_attr_e( $options['lastfm'] ); ?>" />
+						</td>
+					</tr>
 					<tr>
 						<th><?php _e( 'Rel Author', 'wordpress-svbtle' ); ?></th>
 						<td>
 							https://plus.google.com/<input class="regular-text" type="text" name="svbtle_options[rel_author]" value="<?php esc_attr_e( $options['rel_author'] ); ?>" style="width:173px;" />
+						</td>
+					</tr>
+					<tr>
+						<th><?php _e( 'Google+', 'wordpress-svbtle' ); ?></th>
+						<td>
+							https://plus.google.com/<input class="regular-text" type="text" name="svbtle_options[googleplus]" value="<?php esc_attr_e( $options['googleplus'] ); ?>" style="width:173px;" />
 						</td>
 					</tr>
 					<tr>

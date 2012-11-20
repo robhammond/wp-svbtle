@@ -77,25 +77,45 @@
 			<ul class="social_links">
 				<?php if (!empty($options['twitter_username'])): ?>
 					<li class="link twitter">
-						<a href="http://twitter.com/<?php echo $options['twitter_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_411_twitter@2x.png" alt="@<?php echo $options['twitter_username'] ?>" /></a>
-					</li>
-				<?php endif ?>
-				
-				<?php if (!empty($options['github_username'])): ?>
-					<li class="link github">
-						<a href="http://github.com/<?php echo $options['github_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_401_github@2x.png" alt="<?php echo $options['github_username'] ?> at GitHub" /></a>
-					</li>
-				<?php endif ?>
-
-				<?php if (!empty($options['bkmrx'])): ?>
-					<li class="link">
-						<a href="https://bkmrx.com/user/<?php echo $options['bkmrx'] ?>"><img src="/wp-content/themes/svbtle/images/icons/bkmrx.png" alt="<?php echo $options['bkmrx'] ?> on bkmrx.com" /></a>
+						<a href="http://twitter.com/<?php echo $options['twitter_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_411_twitter@2x.png" alt="@<?php echo $options['twitter_username'] ?>" title="@<?php echo $options['twitter_username'] ?>" /></a>
 					</li>
 				<?php endif ?>
 				
 				<?php if (!empty($options['linkedin'])): ?>
 					<li class="link">
-						<a href="http://www.linkedin.com/in/<?php echo $options['linkedin'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_397_linked_in@2x.png" alt="<?php echo $options['linkedin'] ?> on LinkedIn" /></a>
+						<a href="http://www.linkedin.com/in/<?php echo $options['linkedin'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_397_linked_in@2x.png" alt="<?php echo $options['real_name'] ?> on LinkedIn" title="<?php echo $options['real_name'] ?> on LinkedIn" /></a>
+					</li>
+				<?php endif ?>
+
+				<?php if (!empty($options['github_username'])): ?>
+					<li class="link github">
+						<a href="http://github.com/<?php echo $options['github_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_401_github@2x.png" alt="<?php echo $options['real_name'] ?> on GitHub" title="<?php echo $options['real_name'] ?> on GitHub" /></a>
+					</li>
+				<?php endif ?>
+
+				<?php if (!empty($options['bkmrx'])): ?>
+					<li class="link">
+						<a href="https://bkmrx.com/user/<?php echo $options['bkmrx'] ?>"><img src="/wp-content/themes/svbtle/images/icons/bkmrx.png" alt="<?php echo $options['real_name'] ?> on bkmrx.com" title="<?php echo $options['real_name'] ?> on bkmrx.com" /></a>
+					</li>
+				<?php endif ?>
+				
+				
+
+				<?php if (!empty($options['googleplus'])): ?>
+					<li class="link">
+						<a href="https://plus.google.com/u/0/<?php echo $options['googleplus'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_382_google_plus@2x.png" alt="<?php echo $options['real_name'] ?> on Google+" title="<?php echo $options['real_name'] ?> on Google+" /></a>
+					</li>
+				<?php endif ?>
+
+				<?php if (!empty($options['lastfm'])): ?>
+					<li class="link">
+						<a href="http://last.fm/user/<?php echo $options['lastfm'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_416_last_fm@2x.png" alt="<?php echo $options['real_name'] ?> on last.fm" title="<?php echo $options['real_name'] ?> on last.fm" /></a>
+					</li>
+				<?php endif ?>
+
+				<?php if (!empty($options['soundcloud'])): ?>
+					<li class="link">
+						<a href="http://soundcloud.com/<?php echo $options['soundcloud'] ?>"><img src="/wp-content/themes/svbtle/images/icons/soundcloud.png" alt="<?php echo $options['real_name'] ?> on SoundCloud" title="<?php echo $options['real_name'] ?> on SoundCloud" /></a>
 					</li>
 				<?php endif ?>
 
@@ -108,14 +128,22 @@
 			
 				<?php if ($options['rss-link']): ?>
 					<li class="link feed">
-				      <a href="<?php bloginfo('rss_url'); ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_417_rss@2x.png" alt="RSS Feed" /></a>
+				      <a href="<?php bloginfo('rss_url'); ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_417_rss@2x.png" alt="RSS Feed" title="RSS Feed" /></a>
 				    </li>		
 				<?php endif ?>		
 		  </ul>
 		  <div style="clear:both;"></div>
+		  <h4>side projects</h4>
+		  <p style="font-size:11px;line-height:0;">(aka constructive commuting)</p>
+		  <ul class="side_projects">
+		  	<li><a href="https://bkmrx.com/">bkmrx.com</a>: social bookmarking</li>
+		  	<li><a href="https://github.com/robhammond/mojopub">mojoPub</a>: basic <acronym title="Content Management System">cms</acronym></li>
+		  	<li><a href="http://bkx.me/">bkx.me</a>: simple url shortener</li>
+		  	<li><a href="https://github.com/robhammond/mojo-csspath-tester">CSS Path tester</a>: test css selectors <sup><a href="http://mojo-css.herokuapp.com/">demo</a></sup></li>
+		  </ul>
+		  <div style="clear:both;"></div>
 		  <ul class="blog_name">
 				<?php if ( is_active_sidebar( 'sidebar' ) ) dynamic_sidebar( 'sidebar' ); ?>
-
 		  </ul>
 		  <!--aside id="svbtle_linkback">
 		    <a href="https://github.com/gravityonmars/wp-svbtle">
