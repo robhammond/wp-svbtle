@@ -52,9 +52,28 @@ function theme_options_do_page() {
 						</td>
 					</tr>
 					<tr>
+						<th><?php _e( 'LinkedIn Username', 'wordpress-svbtle' ); ?></th>
+						<td>
+							<input class="regular-text" type="text" name="svbtle_options[linkedin]" value="<?php esc_attr_e( $options['linkedin'] ); ?>" />
+						</td>
+					</tr>
+					<tr>
+						<th><?php _e( 'bkmrx.com Username', 'wordpress-svbtle' ); ?></th>
+						<td>
+							<input class="regular-text" type="text" name="svbtle_options[bkmrx]" value="<?php esc_attr_e( $options['bkmrx'] ); ?>" />
+						</td>
+					</tr>
+					<tr>
+						<th><?php _e( 'SoundCloud Username', 'wordpress-svbtle' ); ?></th>
+						<td>
+							<input class="regular-text" type="text" name="svbtle_options[soundcloud]" value="<?php esc_attr_e( $options['soundcloud'] ); ?>" />
+						</td>
+					</tr>
+
+					<tr>
 						<th><?php _e( 'Rel Author', 'wordpress-svbtle' ); ?></th>
 						<td>
-							https://plus.google.com/<input class="regular-text" type="text" name="svbtle_options[rel_author]" value="<?php esc_attr_e( $options['rel_author'] ); ?>" placeholder="https://plus.google.com/[[username]]" style="width:173px;" />
+							https://plus.google.com/<input class="regular-text" type="text" name="svbtle_options[rel_author]" value="<?php esc_attr_e( $options['rel_author'] ); ?>" style="width:173px;" />
 						</td>
 					</tr>
 					<tr>

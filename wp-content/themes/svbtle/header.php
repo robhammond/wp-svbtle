@@ -72,19 +72,33 @@
 					<?php
 					}	
 				?>
-				
+			</ul>
+			<h4>social profiles</h4>
+			<ul class="social_links">
 				<?php if (!empty($options['twitter_username'])): ?>
 					<li class="link twitter">
-						<a target="_blank" href="http://twitter.com/<?php echo $options['twitter_username'] ?>">@<?php echo $options['twitter_username'] ?></a>
+						<a href="http://twitter.com/<?php echo $options['twitter_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_411_twitter@2x.png" alt="@<?php echo $options['twitter_username'] ?>" /></a>
 					</li>
 				<?php endif ?>
 				
 				<?php if (!empty($options['github_username'])): ?>
 					<li class="link github">
-						<a target="_blank" href="http://github.com/<?php echo $options['github_username'] ?>"><img src="/wp-content/themes/svtle/images/icons/plastique-social_88.png" /></a>
+						<a href="http://github.com/<?php echo $options['github_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_401_github@2x.png" alt="<?php echo $options['github_username'] ?> at GitHub" /></a>
+					</li>
+				<?php endif ?>
+
+				<?php if (!empty($options['bkmrx'])): ?>
+					<li class="link">
+						<a href="https://bkmrx.com/user/<?php echo $options['bkmrx'] ?>"><img src="/wp-content/themes/svbtle/images/icons/bkmrx.png" alt="<?php echo $options['bkmrx'] ?> on bkmrx.com" /></a>
 					</li>
 				<?php endif ?>
 				
+				<?php if (!empty($options['linkedin'])): ?>
+					<li class="link">
+						<a href="http://www.linkedin.com/in/<?php echo $options['linkedin'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_397_linked_in@2x.png" alt="<?php echo $options['linkedin'] ?> on LinkedIn" /></a>
+					</li>
+				<?php endif ?>
+
 				<?php if (!empty($options['contact_email'])): ?>
 					<li class="link email">
 						<a href="mailto:<?php echo $options['contact_email'] ?>">						
@@ -94,18 +108,20 @@
 			
 				<?php if ($options['rss-link']): ?>
 					<li class="link feed">
-				      <a href="<?php bloginfo('rss_url'); ?>">feed</a>
+				      <a href="<?php bloginfo('rss_url'); ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_417_rss@2x.png" alt="RSS Feed" /></a>
 				    </li>		
 				<?php endif ?>		
-		
+		  </ul>
+		  <div style="clear:both;"></div>
+		  <ul class="blog_name">
 				<?php if ( is_active_sidebar( 'sidebar' ) ) dynamic_sidebar( 'sidebar' ); ?>
 
 		  </ul>
-		  <aside id="svbtle_linkback">
+		  <!--aside id="svbtle_linkback">
 		    <a href="https://github.com/gravityonmars/wp-svbtle">
 		      <span class="logo_square"><span class="logo_circle">&nbsp;</span></span>&nbsp;<span class="svbtle">wp-svbtle</span>
 		    </a>
-		  </aside>
+		  </aside-->
 		</header>
 		
 		<section id="river" role="main">

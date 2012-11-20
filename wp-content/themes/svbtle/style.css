@@ -1669,8 +1669,8 @@ ol.commentlist li.comment.byuser #respond .form-submit{margin-left: 0}
 #respond .form-submit input{font-size:14px; width:auto}
 .form-allowed-tags{display: none;}
 
-
-article.post {overflow: visible}
+/* Changed from "visible" as it makes posts on loop page flow into next article if there's an image */
+article.post {overflow: hidden}
 
 #respond .comment-subscription-form{margin-bottom: 10px}
 
@@ -1703,4 +1703,14 @@ li.share-end{display: none !important; clear: none !important;}
 	
 	ol.commentlist li.comment {padding: inherit;}
 	.comment-author-avatar {visibility: hidden;}
+}
+
+/* Header Social Links */
+ul.social_links {
+    display: inline;
+}
+
+ul.social_links li {
+    float: left;
+    padding:10px;
 }
