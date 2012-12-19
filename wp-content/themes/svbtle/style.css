@@ -1578,7 +1578,8 @@ li.share-end{display: none !important; clear: none !important;}
 
 /* Header Social Links */
 ul.social_links {
-    display:inline;
+    display:block;
+    width:90%;
 }
 ul.social_links li {
     float:left;
