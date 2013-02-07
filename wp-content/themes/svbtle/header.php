@@ -77,25 +77,25 @@
 			<ul class="social_links">
 				<?php if (!empty($options['twitter_username'])): ?>
 					<li class="link twitter">
-						<a href="http://twitter.com/<?php echo $options['twitter_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_411_twitter@2x.png" alt="@<?php echo $options['twitter_username'] ?>" title="@<?php echo $options['twitter_username'] ?>" /></a>
+						<a href="http://twitter.com/<?php echo $options['twitter_username'] ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/glyphicons_411_twitter@2x.png" alt="@<?php echo $options['twitter_username'] ?>" title="@<?php echo $options['twitter_username'] ?>" /></a>
 					</li>
 				<?php endif ?>
 				
 				<?php if (!empty($options['linkedin'])): ?>
 					<li class="link">
-						<a href="http://www.linkedin.com/in/<?php echo $options['linkedin'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_397_linked_in@2x.png" alt="<?php echo $options['real_name'] ?> on LinkedIn" title="<?php echo $options['real_name'] ?> on LinkedIn" /></a>
+						<a href="http://www.linkedin.com/in/<?php echo $options['linkedin'] ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/glyphicons_397_linked_in@2x.png" alt="<?php echo $options['real_name'] ?> on LinkedIn" title="<?php echo $options['real_name'] ?> on LinkedIn" /></a>
 					</li>
 				<?php endif ?>
 
 				<?php if (!empty($options['github_username'])): ?>
 					<li class="link github">
-						<a href="http://github.com/<?php echo $options['github_username'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_401_github@2x.png" alt="<?php echo $options['real_name'] ?> on GitHub" title="<?php echo $options['real_name'] ?> on GitHub" /></a>
+						<a href="http://github.com/<?php echo $options['github_username'] ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/glyphicons_401_github@2x.png" alt="<?php echo $options['real_name'] ?> on GitHub" title="<?php echo $options['real_name'] ?> on GitHub" /></a>
 					</li>
 				<?php endif ?>
 
 				<?php if (!empty($options['bkmrx'])): ?>
 					<li class="link">
-						<a href="https://bkmrx.com/user/<?php echo $options['bkmrx'] ?>"><img src="/wp-content/themes/svbtle/images/icons/bkmrx.png" alt="<?php echo $options['real_name'] ?> on bkmrx.com" title="<?php echo $options['real_name'] ?> on bkmrx.com" /></a>
+						<a href="https://bkmrx.com/user/<?php echo $options['bkmrx'] ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/bkmrx.png" alt="<?php echo $options['real_name'] ?> on bkmrx.com" title="<?php echo $options['real_name'] ?> on bkmrx.com" /></a>
 					</li>
 				<?php endif ?>
 				
@@ -103,19 +103,19 @@
 
 				<?php if (!empty($options['googleplus'])): ?>
 					<li class="link">
-						<a href="https://plus.google.com/u/0/<?php echo $options['googleplus'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_382_google_plus@2x.png" alt="<?php echo $options['real_name'] ?> on Google+" title="<?php echo $options['real_name'] ?> on Google+" /></a>
+						<a href="https://plus.google.com/u/0/<?php echo $options['googleplus'] ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/glyphicons_382_google_plus@2x.png" alt="<?php echo $options['real_name'] ?> on Google+" title="<?php echo $options['real_name'] ?> on Google+" /></a>
 					</li>
 				<?php endif ?>
 
 				<?php if (!empty($options['lastfm'])): ?>
 					<li class="link">
-						<a href="http://last.fm/user/<?php echo $options['lastfm'] ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_416_last_fm@2x.png" alt="<?php echo $options['real_name'] ?> on last.fm" title="<?php echo $options['real_name'] ?> on last.fm" /></a>
+						<a href="http://last.fm/user/<?php echo $options['lastfm'] ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/glyphicons_416_last_fm@2x.png" alt="<?php echo $options['real_name'] ?> on last.fm" title="<?php echo $options['real_name'] ?> on last.fm" /></a>
 					</li>
 				<?php endif ?>
 
 				<?php if (!empty($options['soundcloud'])): ?>
 					<li class="link">
-						<a href="http://soundcloud.com/<?php echo $options['soundcloud'] ?>"><img src="/wp-content/themes/svbtle/images/icons/soundcloud.png" alt="<?php echo $options['real_name'] ?> on SoundCloud" title="<?php echo $options['real_name'] ?> on SoundCloud" /></a>
+						<a href="http://soundcloud.com/<?php echo $options['soundcloud'] ?>"><img src="/<?php echo get_bloginfo('template_url') ?>/images/icons/soundcloud.png" alt="<?php echo $options['real_name'] ?> on SoundCloud" title="<?php echo $options['real_name'] ?> on SoundCloud" /></a>
 					</li>
 				<?php endif ?>
 
@@ -128,7 +128,7 @@
 			
 				<?php if ($options['rss-link']): ?>
 					<li class="link feed">
-				      <a href="<?php bloginfo('rss_url'); ?>"><img src="/wp-content/themes/svbtle/images/icons/glyphicons_417_rss@2x.png" alt="RSS Feed" title="RSS Feed" /></a>
+				      <a href="<?php bloginfo('rss_url'); ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/icons/glyphicons_417_rss@2x.png" alt="RSS Feed" title="RSS Feed" /></a>
 				    </li>		
 				<?php endif ?>		
 		  </ul>
